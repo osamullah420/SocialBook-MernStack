@@ -23,7 +23,7 @@ const Registeration = () => {
       formData.append("image", data.image[0]);
 
       const res = await axios.post(
-        "http://localhost:8080/api/v1/auth/register",
+        "http://social-book-mern-stack-api.vercel.app/api/v1/auth/register",
         formData,
         {
           headers: {
