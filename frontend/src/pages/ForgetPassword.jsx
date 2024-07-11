@@ -16,7 +16,7 @@ const ForgetPassword = ({ email }) => {
   const handleChangePassword = async (data) => {
     try {
       const res = await axios.post(
-        "http://localhost:8080/api/v1/auth/verify-otp-reset-password",
+        "http://social-book-mern-stack-api.vercel.app/api/v1/auth/verify-otp-reset-password",
         { email, otp: data.otp, newPassword: data.newPassword }
       );
       if (res.data.success) {
