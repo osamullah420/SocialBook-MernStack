@@ -50,7 +50,7 @@ const EditPost = ({ postId, onClose }) => {
 
     try {
       await axios.put(
-        `http://localhost:8080/api/v1/posts/editpost/${postId}`,
+        `http://social-book-mern-stack-api.vercel.app/api/v1/posts/editpost/${postId}`,
         updatedPostData,
         {
           headers: {
