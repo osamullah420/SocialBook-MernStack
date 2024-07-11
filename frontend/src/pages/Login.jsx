@@ -18,7 +18,7 @@ const Login = () => {
   const handleLogin = async (data) => {
     try {
       const res = await axios.post(
-        "http://social-book-mern-stack-frontend.vercel.app/api/v1/auth/login",
+        "httpS://social-book-mern-stack-frontend.vercel.app/api/v1/auth/login",
         data
       );
       if (res.data.success) {
