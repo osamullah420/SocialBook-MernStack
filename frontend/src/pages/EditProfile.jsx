@@ -49,7 +49,7 @@ const EditProfile = () => {
 
     try {
       const res = await axios.put(
-        `http://localhost:8080/api/v1/auth/edit-profile/${auth.user._id}`,
+        `http://social-book-mern-stack-api.vercel.app/api/v1/auth/edit-profile/${auth.user._id}`,
         data,
         {
           headers: {
