@@ -17,7 +17,7 @@ const MyPosts = () => {
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/api/v1/posts/getposts/${userId}`
+          `http://social-book-mern-stack-api.vercel.app/api/v1/posts/getposts/${userId}`
         );
         if (response.data.success) {
           setPosts(response.data.posts);
@@ -49,7 +49,7 @@ const MyPosts = () => {
 
     try {
       const response = await axios.delete(
-        `http://localhost:8080/api/v1/posts/delete/${postId}`
+        `http://social-book-mern-stack-api.vercel.app/api/v1/posts/delete/${postId}`
       );
       if (response.data.success) {
         setPosts(posts.filter((post) => post._id !== postId)); // Remove deleted post from state
