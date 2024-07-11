@@ -17,7 +17,7 @@ const LoginOTP = ({ email }) => {
   const handleVerifyOtp = async (data) => {
     try {
       const res = await axios.post(
-        "http://localhost:8080/api/v1/auth/verify-otp",
+        "http://social-book-mern-stack-api.vercel.app/api/v1/auth/verify-otp",
         { email, otp: data.otp }
       );
       if (res.data.success) {
