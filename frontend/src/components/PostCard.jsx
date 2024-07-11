@@ -20,7 +20,7 @@ const PostCard = ({ post }) => {
   const handleLike = async () => {
     try {
       const response = await axios.put(
-        `http://localhost:8080/api/v1/posts/${post._id}/like`,
+        `http://social-book-mern-stack-api.vercel.app/api/v1/posts/${post._id}/like`,
         {}
       );
       setLikesCount(response.data.totalLikes);
@@ -33,7 +33,7 @@ const PostCard = ({ post }) => {
   const handleUnlike = async () => {
     try {
       const response = await axios.put(
-        `http://localhost:8080/api/v1/posts/${post._id}/unlike`,
+        `http://social-book-mern-stack-api.vercel.app/api/v1/posts/${post._id}/unlike`,
         {}
       );
       setLikesCount(response.data.totalLikes);
