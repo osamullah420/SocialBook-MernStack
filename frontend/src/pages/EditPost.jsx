@@ -15,7 +15,7 @@ const EditPost = ({ postId, onClose }) => {
     const fetchPost = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/api/v1/posts/getpost/${postId}`
+          `http://social-book-mern-stack-api.vercel.app/api/v1/posts/getpost/${postId}`
         );
         const { description, image } = response.data.post;
         setFormData({ description, image: null });
