@@ -16,7 +16,6 @@ const app = express();
 
 app.use(cors({
   origin:["https://social-book-mern-stack-frontend.vercel.app"],
-  methods : ["GET", "POST", "DELETE","PUT"],
 }));
 app.use(express.json());
 app.use(morgan("dev"));
