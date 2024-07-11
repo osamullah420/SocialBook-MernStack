@@ -16,7 +16,7 @@ const ForgetOTP = () => {
   const handleResetOtp = async (data) => {
     try {
       const res = await axios.post(
-        "http://localhost:8080/api/v1/auth/request-password-reset",
+        "http://social-book-mern-stack-api.vercel.app/api/v1/auth/request-password-reset",
         data
       );
       if (res.data.success) {
