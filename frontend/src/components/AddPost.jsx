@@ -37,7 +37,7 @@ const AddPost = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/v1/posts/createpost",
+        "http://social-book-mern-stack-api.vercel.app/api/v1/posts/createpost",
         formData,
         {
           headers: {
