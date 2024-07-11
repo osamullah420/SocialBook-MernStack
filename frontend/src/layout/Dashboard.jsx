@@ -22,7 +22,7 @@ const Dashboard = () => {
   const fetchPosts = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/v1/posts/getallposts"
+        "http://social-book-mern-stack-api.vercel.app/api/v1/posts/getallposts"
       );
       setPosts(response.data.posts);
       setLoading(false);
