@@ -14,7 +14,10 @@ const app = express();
 
 //middlewares
 
-app.use(cors());
+app.use(cors({
+  origin:["https://social-book-mern-stack-frontend.vercel.app"],
+  methods : ["GET", "POST", "DELETE","PUT"],
+}));
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(fileUpload({ useTempFiles: true, tempFileDir: "/tmp/" }));
